@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Advisor</title>
+<style>
+body {
+  background-color: white;
+}
+
+.main-page {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.upload-button {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.log-history-button {
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<h1>My Advisor</h1>
+<div class="main-page">
+  <button class="upload-button">Upload Image</button>
+  <button class="log-history-button">Log History</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Advisor</title>
+<style>
+body {
+  background-color: white;
+}
+
+.main-page {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.upload-button {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.log-history-button {
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.log-history-container {
+  display: none;
+}
+</style>
+</head>
+<body>
+<h1>My Advisor</h1>
+<div class="main-page">
+  <button class="upload-button">Upload Image</button>
+  <button class="log-history-button" onclick="showLogHistory()">Log History</button>
+</div>
+<div class="log-history-container">
+  <h2>Log History</h2>
+  <ul>
+    <li>This is a log entry.</li>
+    <li>This is another log entry.</li>
+  </ul>
+</div>
+<script>
+function showLogHistory() {
+  var logHistoryContainer = document.querySelector(".log-history-container");
+  logHistoryContainer.style.display = "block";
+}
+</script>
+</body>
+</html>

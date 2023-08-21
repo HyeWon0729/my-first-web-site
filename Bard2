@@ -1,0 +1,15 @@
+function uploadImage() {
+  // Get the image file from the user.
+  var imageFile = document.getElementById("imageFile").files[0];
+
+  // Upload the image file to the server.
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", "/upload_image");
+  xhr.setRequestHeader("Content-Type", "multipart/form-data");
+  xhr.send(imageFile);
+}
+function viewLogHistory() {
+    // Open a new tab with the log history.
+    var tab = window.open("/log_history");
+  }
+  

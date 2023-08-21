@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My advisor</title>
+    <link rel="stylesheet" href="../public/css/main.css">
+</head>
+<body class="background-image">
+  <h1>My advisor</h1>
+  <form class="center" id="uploadForm">
+    <label for="image">Upload the image:</label>
+    <input type="file" id="image" name="image" accept="image/*" onchange="previewImage(event)">
+    <img id="preview" src="#" alt="Preview" style="max-width: 300px; display: none;">
+    <button type="submit">Diagnosis</button>
+  </form>
+
+  <script src="../public/js/main.js"></script>
+  <script src="../public/js/transfer.js"></script>
+
+</body>
+</html>
